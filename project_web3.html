@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+    crossorigin="anonymous"
+  />
+    <title>Document</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            font-family: 'Poppins',sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #333;
+            background: #a1c3ff;
+        }
+        ul{
+            list-style-type: none;
+        }
+        h1,h2{
+            margin-bottom: 15px;
+        }
+
+        .container{
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 30px;
+        }
+
+        .navbar{
+            background:#3474e6;
+            color: #fff;
+            height: 60px;
+        }
+
+        .navbar .logo{
+            font-size: x-large;
+            font-weight: bold;
+        }
+
+        .navbar a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .navbar a:hover{
+            color: lightblue;
+        }
+
+        .navbar .container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+        }
+
+        .navbar ul{
+            display: flex;
+        }
+
+        .navbar ul li{
+            margin-left:20px ;
+        }
+
+        .header{
+            background-color: #0151cc;
+            color: #fff;
+            min-height: 400px;
+            height: 100%;
+        }
+
+        img{
+            max-width: 100%;
+        }
+        
+        .header h1{
+            font-size:3rem ;
+            font-weight: bold;
+            line-height: 1.2;
+        }
+
+
+        .header img{
+            max-width: 400px;
+            margin-left:20px ;
+        }
+
+        .header .container{
+            min-height: 400px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .boxes .container{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .box{
+           flex: 1;
+           background: #0a51cc;
+           color: #fff;
+           border-radius:10px ;
+           margin: 20px 10px;
+           box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+           padding: 15px 20px;
+        }
+
+        .box i{
+            margin-right:10px ;
+        }
+
+        @media (max-width: 768px) {
+            .header .container{
+                flex-direction: column;
+                padding-top: 20px;
+                text-align: center;
+            }
+            
+            .boxes .container{
+                display: block;
+                text-align: center;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">flexbox</div>
+            <ul class="nav">
+                <li><a href="#">Home</a></li>
+                <li> <a href="#">About</a></li>
+                <li><a href="#">Content</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="header">
+        <div class="container">
+            <div>
+                <h1>Fexbox Crash Course</h1>
+                <p>Lorem ipsum dolor sit amet 
+                    consectetur adipisicing elit.
+                     Neque, voluptate et! Velit, neque
+                      magnam iste consequuntur doloremque 
+                      qui natus nostrum.</p>
+            </div>
+            <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzOEoJAPi3hlSaK-_9cF8gLNYs9oWj8YDsfg&usqp=CAU" alt=""></div>
+        </div>
+    </header>
+    
+    <section class="boxes">
+        <div class="container">
+            <div class="box">
+                <h2><i class="fas fa-arrows-alt-v"></i>Alignment & Space</h2>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                 Quibusdam dicta necessitatibus officiis est, quisquam corporis
+                 
+            </p>
+            </div>
+            <div class="box">
+                <h2><i class="fas fa-arrows-alt-v"></i>Alignment & Space</h2>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                 Quibusdam dicta necessitatibus officiis est, quisquam corporis
+                 
+            </p>
+            </div>
+            <div class="box">
+                <h2><i class="fas fa-arrows-alt-v"></i>Alignment & Space</h2>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                 Quibusdam dicta necessitatibus officiis est, quisquam corporis
+                  
+            </p>
+            </div>
+        </div>
+        
+    </section>
+</body>
+</html>
